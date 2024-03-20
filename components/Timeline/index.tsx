@@ -1,10 +1,10 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/card";
 import Image from "next/image";
-import React, { ReactNode } from "react";
+import React, { PropsWithChildren, ReactNode } from "react";
 import Typography from "../Typography";
 import { FontVariant } from "../Typography/types";
 
-const Timeline = ({ children }) => {
+const Timeline = ({ children }: PropsWithChildren) => {
   return (
     <div className="relative flex justify-start  h-auto animate-appearance-in">
       <div>{children}</div>

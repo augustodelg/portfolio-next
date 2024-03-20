@@ -1,12 +1,8 @@
 'use client'
 import React, { useState, useEffect } from 'react';
+import { ChangingComponentProps } from './types';
 
-interface ChangingComponentProps {
-    components: React.ReactNode[];
-    intervalTime: number;
-}
-
-const ChangingComponent: React.FC<ChangingComponentProps> = ({ components, intervalTime }) => {
+const ChangingComponent = ({ components, intervalTime }: ChangingComponentProps ) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {

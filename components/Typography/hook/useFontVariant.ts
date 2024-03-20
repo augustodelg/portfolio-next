@@ -26,7 +26,7 @@ export const useFontVariant = (
 
     // Retorna un objeto de estilo CSS.
     return `${font.className} ${fontWeight}`;
-  }, [variant]);
+  }, [font.className, variant]);
 
   return style;
 };
