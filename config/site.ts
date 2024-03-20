@@ -2,61 +2,31 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
 	name: "Augusto Del Grosso",
-	description: "Make beautiful websites regardless of your design experience.",
-	navItems: [
-		{
-			label: "Home",
-			href: "/",
-		},
-    {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    }
-	],
+	description: "Full Stack Cloud Native Developer",
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			label: "INICIO",
+			href: "#home",
 		},
 		{
-			label: "Dashboard",
-			href: "/dashboard",
+			label: "SOBRE MI",
+			href: "#about-me",
 		},
 		{
-			label: "Projects",
-			href: "/projects",
+			label: "EXPERIENCIAS",
+			href: "#experiense",
 		},
 		{
-			label: "Team",
-			href: "/team",
+			label: "ESTUDIOS",
+			href: "#",
 		},
 		{
-			label: "Calendar",
-			href: "/calendar",
+			label: "PROYECTOS",
+			href: "#",
 		},
 		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
+			label: "CONOCIMIENTOS",
+			href: "#",
 		},
 	],
 	links: {

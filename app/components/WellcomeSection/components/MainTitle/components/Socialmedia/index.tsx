@@ -3,7 +3,7 @@ import React from "react";
 
 const Socialmedia: React.FC = () => {
   return (
-    <div className="flex gap-4 pt-1 pl-1.5 ">
+    <div className="flex gap-4  w-max mx-auto lg:mx-0 lg:pl-1 mt-2">
       <Image
         src={"/icons/Github.svg"}
         width={40}

@@ -7,13 +7,11 @@ import Loading from "./loading";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <Suspense fallback={<Loading />}>
-        <WelcomeSection />
-        <AboutmeSection />
-        <ExperienceSection />
-        <StudySection />
-      </Suspense>
+    <div className="flex flex-col items-center w-screen ">
+      <WelcomeSection />
+      {/* <AboutmeSection /> */}
+      {/* <ExperienceSection /> */}
+      {/* <StudySection /> */}
     </div>
   );
 }
