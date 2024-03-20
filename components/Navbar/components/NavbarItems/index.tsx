@@ -14,16 +14,24 @@ export const NavbarItems = ({ onClick: onClickCallback }: NavbarItemsProps) => {
     onClickCallback?.();
   };
 
-  return siteConfig.navMenuItems.map((item) => (
-    <NavbarItem key={item.label} >
-      <Button className=" hover:scale-110" variant="light" onClick={() => onClick(item.href)}>
-        <Typography.Body
-          className="text-3xl sm:text-medium  text-indigo-950"
-          variant={FontVariant.BOLD}
-        >
-          {item.label}
-        </Typography.Body>
-      </Button>
-    </NavbarItem>
-  ));
+  return (
+    <>
+      {siteConfig.navMenuItems.map((item) => (
+        <NavbarItem key={item.label}>
+          <Button
+            className=" hover:scale-110"
+            variant="light"
+            onClick={() => onClick(item.href)}
+          >
+            <Typography.Body
+              className="text-3xl sm:text-medium  text-indigo-950"
+              variant={FontVariant.BOLD}
+            >
+              {item.label}
+            </Typography.Body>
+          </Button>
+        </NavbarItem>
+      ))}
+    </>
+  );
 };
