@@ -15,10 +15,10 @@ export const NavbarItems = ({ onClick: onClickCallback }: NavbarItemsProps) => {
   };
 
   return siteConfig.navMenuItems.map((item) => (
-    <NavbarItem key={item.label}>
-      <Button variant="light" onClick={() => onClick(item.href)}>
+    <NavbarItem key={item.label} >
+      <Button className=" hover:scale-110" variant="light" onClick={() => onClick(item.href)}>
         <Typography.Body
-          className="xs:text-3xl text-medium  text-indigo-950"
+          className="text-3xl sm:text-medium  text-indigo-950"
           variant={FontVariant.BOLD}
         >
           {item.label}
