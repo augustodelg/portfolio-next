@@ -6,21 +6,21 @@ import Socialmedia from "./components/Socialmedia";
 
 const MainTitle: React.FC = () => {
   return (
-    <div>
+    <div className="w-auto text-center lg:text-left">
       <Typography.Body2
         variant={FontVariant.REGULAR}
-        className="text-md pl-[6px] leading-tight text-gray-500 "
+        className="text-md text-left hidden lg:block pl-[6px] lg:leading-tight text-gray-500 "
       >
         Alias Taca
       </Typography.Body2>
-      <div className="flex  flex-col md:flex-row">
+      <div className="flex flex-col lg:flex-row gap-2 lg:gap-0">
         <Typography.H1
           variant={FontVariant.BOLD}
-          className="text-[130px] leading-none  text-purple-950"
+          className="text-[130px] leading-[0.8] lg:leading-none   text-purple-950"
         >
           HOLA
         </Typography.H1>
-        <div className="bg-purple-300  ml-2 rounded-lg w-min h-min md:-rotate-90 md:self-center ">
+        <div className="bg-purple-300  lg:ml-2 rounded-lg  lg:-rotate-90 lg:self-center ">
           <Typography.H1
             variant={FontVariant.BOLD}
             className="text-4xl p-4 text-white text-center"
@@ -37,13 +37,19 @@ const MainTitle: React.FC = () => {
           </Typography.H3>
           <Typography.H3
             variant={FontVariant.BOLD}
-            className="text-5xl text-purple-950"
+            className="text-6xl xl:text-5xl text-purple-950"
           >
             Del Grosso.
           </Typography.H3>
-        </div>
+        <Typography.Body2
+          variant={FontVariant.REGULAR}
+          className="text-md lg:hidden leading-tight text-gray-500 "
+        >
+          Alias Taca
+        </Typography.Body2>
       </div>
-      <div className="flex pl-[4.8px]">
+        </div>
+      <div className="flex  lg:pl-[4.8px] flex-col lg:flex-row">
         <ChangingComponent
           components={[
             <Typography.H3
@@ -65,7 +71,7 @@ const MainTitle: React.FC = () => {
         />
         <Typography.H3
           variant={FontVariant.BOLD}
-          className="text-5xl pl-2 text-purple-950"
+          className="text-5xl lg:pl-2 text-purple-950"
         >
           DEVELOPER.
         </Typography.H3>
