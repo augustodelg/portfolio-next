@@ -15,11 +15,10 @@ import { FontVariant } from "@/components/Typography/types";
 import { useState } from "react";
 import { NavbarItems } from "./components/NavbarItems";
 import { Button } from "@nextui-org/button";
-import { useRouter } from "next/navigation";
+
+
 
 export const Navbar = () => {
-  const router = useRouter();
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggle = () => {
@@ -61,6 +60,7 @@ export const Navbar = () => {
         </NavbarContent>
       </NavbarMenu>
       <NavbarContent className="pl-10" justify="end">
+
         <NavbarItem>
           <Switch />
         </NavbarItem>
