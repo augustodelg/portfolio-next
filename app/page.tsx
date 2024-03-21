@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center w-screen ">
       <WelcomeSection />
-      {/* <AboutmeSection /> */}
+      <AboutmeSection />
       {/* <ExperienceSection /> */}
       {/* <StudySection /> */}
     </div>

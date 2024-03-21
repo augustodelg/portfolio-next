@@ -20,7 +20,7 @@ const MainTitle: React.FC = () => {
         >
           HOLA
         </Typography.H1>
-        <div className="bg-purple-300  lg:ml-2 rounded-lg  lg:-rotate-90 lg:self-center ">
+        <div className="bg-purple-950  lg:ml-2 rounded-lg  lg:-rotate-90 lg:self-center ">
           <Typography.H1
             variant={FontVariant.BOLD}
             className="text-4xl p-4 text-white text-center"
