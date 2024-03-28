@@ -1,25 +1,17 @@
 "use client";
 
-import { Link } from "@nextui-org/link";
 import {
-  NavbarBrand,
   NavbarContent,
   NavbarItem,
   NavbarMenu,
   NavbarMenuToggle,
-  Navbar as NextUINavbar,
+  Navbar as NextUINavbar
 } from "@nextui-org/navbar";
 import { Switch } from "@nextui-org/switch";
-import Typography from "@/components/Typography";
-import { FontVariant } from "@/components/Typography/types";
 import { useState } from "react";
 import { NavbarItems } from "./components/NavbarItems";
-import { Button } from "@nextui-org/button";
-import { useRouter } from "next/navigation";
 
 export const Navbar = () => {
-  const router = useRouter();
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggle = () => {

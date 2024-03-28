@@ -1,13 +1,12 @@
 import { Navbar } from "@/components/Navbar";
+import Typography from "@/components/Typography";
 import { fontSans } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
 import "@/styles/globals.css";
 import clsx from "clsx";
 import { Metadata } from "next";
-import { Providers } from "./providers";
-import { Button } from "@nextui-org/button";
-import Typography from "@/components/Typography";
 import Link from "next/link";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: {
