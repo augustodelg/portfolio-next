@@ -5,7 +5,7 @@ import { technologies } from "./const";
 
 const TechnologyDecoration: React.FC = () => {
   return (
-    <>
+    <div className="-z-40 transition-all" >
       {technologies.map((technology) => (
         <TechnologyCard
           key={technology.name}
@@ -16,7 +16,7 @@ const TechnologyDecoration: React.FC = () => {
           src={technology.src}
         />
       ))}
-    </>
+    </div>
   );
 };
 

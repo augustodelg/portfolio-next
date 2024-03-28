@@ -25,7 +25,6 @@ const Socialmedia: React.FC = () => {
           className="hover:scale-[1.2] transition-all duration-200"
         />
       </Link>
-      
     </div>
   );
 };

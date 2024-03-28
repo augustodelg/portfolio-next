@@ -1,11 +1,10 @@
-import { Navbar } from "@/components/navbar";
+import { Navbar } from "@/components/Navbar";
 import { fontSans } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
 import "@/styles/globals.css";
 import clsx from "clsx";
 import { Metadata } from "next";
 import { Providers } from "./providers";
-import { useState } from "react";
 
 export const metadata: Metadata = {
   title: {
@@ -36,14 +35,14 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-max min-w-full bg-background font-sans antialiased no-scrollbar",
+          "min-h-full min-w-full bg-background font-sans antialiased no-scrollbar",
           fontSans.className
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <Navbar />
-          <div id="home" className="relative flex flex-col h-screen w-max  mx-auto ">
-            <main className="relative container pt-16 px-6 flex-shrink ">{children}</main>
+          <div id="home" className=" h-full w-full  ">
+            <main className="relative flex flex-col w-screen mx-auto ">{children}</main>
           </div>
         </Providers>
       </body>
