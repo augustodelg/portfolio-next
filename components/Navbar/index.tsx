@@ -49,14 +49,6 @@ export const Navbar = () => {
             <div className="mb-44">
               <NavbarItems onClick={toggle} />
             </div>
-            <div className="absolute left-0 right-0  bottom-10 mx-auto flex flex-col align-middle justify-center text-center">
-              <Button variant="light" size="lg" className="text-gray-500">
-                Version 0.0.1
-              </Button>
-              <Typography.Body className="text-small text-gray-500">
-                Designed and developed by Taca 👨‍💻
-              </Typography.Body>
-            </div>
           </div>
         </NavbarContent>
       </NavbarMenu>

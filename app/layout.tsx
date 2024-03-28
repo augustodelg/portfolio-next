@@ -5,6 +5,9 @@ import "@/styles/globals.css";
 import clsx from "clsx";
 import { Metadata } from "next";
 import { Providers } from "./providers";
+import { Button } from "@nextui-org/button";
+import Typography from "@/components/Typography";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
@@ -28,10 +31,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
-  
   return (
-    <html lang="en" className={`${fontSans.className} scroll-smooth`} suppressHydrationWarning>
+    <html
+      lang="es"
+      className={`${fontSans.className} scroll-smooth`}
+      suppressHydrationWarning
+    >
       <head />
       <body
         className={clsx(
@@ -40,11 +45,23 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <Navbar />
           <div id="home" className=" h-full w-full  ">
-            <main className="relative flex flex-col w-screen mx-auto ">{children}</main>
+            <Navbar />
+            <main className="relative flex flex-col w-screen mx-auto ">
+              {children}
+            </main>
           </div>
         </Providers>
+      <footer>
+        <div className="mb-10 mx-auto flex flex-col align-middle justify-center text-center">
+          <Typography.Body className="text-small text-gray-500">
+            Designed and developed by Taca 👨‍💻
+          </Typography.Body>
+          <Link href={"https://github.com/augustodelg/portfolio-next"} target="_blank" className="text-gray-500">
+            Version 0.0.2
+          </Link>
+        </div>
+      </footer>
       </body>
     </html>
   );
