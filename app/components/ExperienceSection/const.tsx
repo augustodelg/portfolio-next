@@ -15,6 +15,7 @@ export const experienceData = [
       ),
       date: "August 2022 - Ongoing",
       title: <TitleSnappler />,
+      current: true,
       subtitle: "Snappler",
       buttonText: "Show more"
     },
@@ -26,7 +27,7 @@ export const experienceData = [
     },
     {
       date: "January 2021 - August 2022",
-      title: "FullStack (React JS/Ruby on Rails) - Data Engineer (Datawarehouse)",
+      title: "FullStack (React JS/Ruby on Rails) - Data Engineer",
       subtitle: "Universidad de Almirante Brown (Remote)",
       buttonText: "Show more"
       
