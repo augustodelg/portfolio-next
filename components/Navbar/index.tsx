@@ -16,7 +16,7 @@ import { isDarkMode } from "@/utils";
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
-
+  
   const isDark = isDarkMode(localStorage.getItem("theme") || theme);
 
   const darkModeHandler = () => {
