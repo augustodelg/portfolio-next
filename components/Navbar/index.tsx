@@ -5,14 +5,23 @@ import {
   NavbarItem,
   NavbarMenu,
   NavbarMenuToggle,
-  Navbar as NextUINavbar
+  Navbar as NextUINavbar,
 } from "@nextui-org/navbar";
 import { Switch } from "@nextui-org/switch";
-import { useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { NavbarItems } from "./components/NavbarItems";
+import { useTheme } from "next-themes";
+import { isDarkMode } from "@/utils";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  const isDark = isDarkMode(localStorage.getItem("theme") || theme);
+
+  const darkModeHandler = () => {
+    setTheme(isDark ? "light" : "dark");
+  };
 
   const toggle = () => {
     setIsMenuOpen(false);
@@ -29,7 +38,7 @@ export const Navbar = () => {
       <NavbarContent className="sm:hidden">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidde text-indigo-950"
+          className="sm:hidde text-indigo-950 dark:text-slate-200"
         />
       </NavbarContent>
       <NavbarContent className="hidden sm:flex flex-row gap-0" justify="center">
@@ -46,7 +55,9 @@ export const Navbar = () => {
       </NavbarMenu>
       <NavbarContent className="pl-10" justify="end">
         <NavbarItem>
-          <Switch />
+          <Suspense fallback={null}>
+            <Switch isSelected={isDark} onChange={() => darkModeHandler()} />
+          </Suspense>
         </NavbarItem>
       </NavbarContent>
     </NextUINavbar>

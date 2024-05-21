@@ -24,7 +24,7 @@ export const NavbarItems = ({ onClick: onClickCallback }: NavbarItemsProps) => {
             onClick={() => onClick(item.href)}
           >
             <Typography.Body
-              className="text-4xl sm:text-medium  text-indigo-950"
+              className="text-4xl sm:text-medium  text-indigo-950 dark:text-slate-200 hover:text-indigo-950 dark:hover:text-slate-200"
               variant={FontVariant.BOLD}
             >
               {item.label}
