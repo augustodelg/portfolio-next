@@ -32,7 +32,7 @@ const theme: ConfigThemes = {
       primary: "#6366F1",
       secondary: "#EC4899",
       background: {
-        DEFAULT: "#FFFFF",
+        DEFAULT: "#FFFFFF",
       },
 
       foreground: {
