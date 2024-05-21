@@ -10,15 +10,14 @@ import {
 import { Switch } from "@nextui-org/switch";
 import { Suspense, useEffect, useState } from "react";
 import { NavbarItems } from "./components/NavbarItems";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/hooks/useTheme";
 import { isDarkMode } from "@/utils";
 import { useGetPreconfigTheme } from "./hooks/useGetPreconfigTheme";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { setTheme } = useTheme();
-  const preconfiguredTheme = useGetPreconfigTheme();
-  const isDark = isDarkMode(preconfiguredTheme);
+  const { setTheme, theme } = useTheme();
+  const isDark = isDarkMode(theme);
 
   const darkModeHandler = () => {
     setTheme(isDark ? "light" : "dark");

@@ -1,6 +1,6 @@
 import { siteConfig } from "@/config/site";
 import { isDarkMode } from "@/utils";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/hooks/useTheme";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

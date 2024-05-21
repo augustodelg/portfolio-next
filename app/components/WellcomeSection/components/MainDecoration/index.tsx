@@ -1,5 +1,5 @@
 import { isDarkMode } from "@/utils";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/hooks/useTheme";
 import Image from "next/image";
 import React from "react";
 
