@@ -12,12 +12,13 @@ import { Suspense, useEffect, useState } from "react";
 import { NavbarItems } from "./components/NavbarItems";
 import { useTheme } from "next-themes";
 import { isDarkMode } from "@/utils";
+import { useGetPreconfigTheme } from "./hooks/useGetPreconfigTheme";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
-  
-  const isDark = isDarkMode(localStorage.getItem("theme") || theme);
+  const { setTheme } = useTheme();
+  const preconfiguredTheme = useGetPreconfigTheme();
+  const isDark = isDarkMode(preconfiguredTheme);
 
   const darkModeHandler = () => {
     setTheme(isDark ? "light" : "dark");
