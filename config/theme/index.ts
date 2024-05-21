@@ -3,6 +3,11 @@ import { ConfigTheme, ConfigThemes } from "@nextui-org/theme";
 const theme: ConfigThemes = {
   light: {
     layout: {
+      boxShadow: {
+        small: "0 0 0.5rem rgba(175, 120, 120,  0.2)",
+        medium: "0 0 1rem rgba(175, 120, 120,  0.2)",
+        large: "0 0 2rem rgba(175, 120, 120,  0.2)",
+      },
       fontSize: {
         small: "0.75rem",
         medium: "0.875rem",
@@ -22,11 +27,14 @@ const theme: ConfigThemes = {
       disabledOpacity: 0.5,
       hoverOpacity: 0.8,
       dividerWeight: "1px",
-
     },
     colors: {
       primary: "#6366F1",
       secondary: "#EC4899",
+      background: {
+        DEFAULT: "#FFFFF",
+      },
+
       foreground: {
         50: "#F9FAFB",
         100: "#F3F4F6",
@@ -39,10 +47,49 @@ const theme: ConfigThemes = {
         800: "#1F2937",
         900: "#111827",
         DEFAULT: "#FFFF",
-
       },
       divider: "#fff",
       content1: "#fff",
+    },
+  },
+  dark: {
+    layout: {
+      boxShadow: {
+        small: "0 0 0.5rem rgba(60, 0, 210, 0.12)",
+        medium: "0 0 1rem rgba(60, 0, 210, 0.12)",
+        large: "0 0 2rem rgba(60, 0, 210, 0.12)",
+      },
+      fontSize: {
+        small: "0.75rem",
+        medium: "0.875rem",
+        large: "1rem",
+        tiny: "0.5rem",
+      },
+      lineHeight: {
+        small: "1rem",
+        medium: "1.25rem",
+        large: "2rem",
+      },
+      radius: {
+        small: "0.25rem",
+        medium: "0.5rem",
+        large: "1rem",
+      },
+      disabledOpacity: 0.5,
+      hoverOpacity: 0.8,
+      dividerWeight: "1px",
+    },
+
+    colors: {
+      background: {
+        DEFAULT: "#060910",
+      },
+      primary: "#818CF8", // Lighter shade of blue for better visibility in dark mode
+      secondary: "#F472B6", // Lighter shade of pink
+      divider: "#1F2937",
+      // content1: "#111D2D",
+      // content1: "#111827",
+      content1: "#0B1625",
     },
   },
 };
