@@ -10,7 +10,7 @@ import {
 import { Switch } from "@nextui-org/switch";
 import { Suspense, useEffect, useState } from "react";
 import { NavbarItems } from "./components/NavbarItems";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/hooks/useTheme";
 import { isDarkMode } from "@/utils";
 import { useGetPreconfigTheme } from "./hooks/useGetPreconfigTheme";
 

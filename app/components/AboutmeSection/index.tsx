@@ -7,7 +7,7 @@ import Typography from "@/components/Typography";
 import { FontVariant } from "@/components/Typography/types";
 import Image from "next/image";
 import { isDarkMode } from "@/utils";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/hooks/useTheme";
 
 const AboutmeSection: React.FC = () => {
   const { theme } = useTheme();
