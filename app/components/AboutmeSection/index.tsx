@@ -58,7 +58,7 @@ const AboutmeSection: React.FC = () => {
         width={350}
         height={350}
         quality={100}
-        // style={{  filter: iconStyle}}
+        style={{  filter: iconStyle , opacity: 0.5}}
         alt={"decorative points"}
       />
       <div className="flex align-middle justify-center md:justify-end md:w-full w-full">
