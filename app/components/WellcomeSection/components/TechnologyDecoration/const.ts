@@ -97,8 +97,8 @@ export const technologies: TechnologyItem[] = [
   {
     name: "Kubernetes",
     src: "/icons/kubernetes.png",
-    width: 50,
-    height: 40,
+    width: 60,
+    height: 30,
     alt: "Kubernetes icon",
     configuration:
       `top-[122%]
@@ -109,6 +109,7 @@ export const technologies: TechnologyItem[] = [
       opacity-90
       blur-[2px]
       py-2
+      px-2
       lg:top-[70%]
       lg:-right-[10%]
       xl:top-[80%]

@@ -10,8 +10,12 @@ const TechnologyCard: React.FC<TechnologyCardProps> = ({
   src,
 }) => {
   return (
-    <Card shadow="lg" isBlurred className={`absolute ${configuration}`}>
-      <CardBody className="animate-appearance-in delay-200 py-2">
+    <Card
+      shadow="lg"
+      isBlurred
+      className={`absolute ${configuration} dark:bg-content1`}
+    >
+      <CardBody className="animate-appearance-in delay-200 py-2 ">
         <Image src={src} width={width} height={height} alt={alt} />
       </CardBody>
     </Card>
