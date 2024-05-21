@@ -12,7 +12,7 @@ const H1 = ({
   const fontClassName = useFontVariant(fontSans, variant);
 
   return (
-    <h1 className={`${fontClassName} ${className}`} {...rest}>
+    <h1 className={`${fontClassName}  dark:text-gray-200 ${className}`} {...rest}>
       {children}
     </h1>
   );

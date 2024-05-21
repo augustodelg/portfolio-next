@@ -78,7 +78,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
             {typeof title === "string" ? (
               <Typography.H2
                 variant={FontVariant.BOLD}
-                className="text-xl lg:text-2xl text-primary mb-1 sm:mb-0"
+                className="text-xl lg:text-2xl text-primary mb-1 sm:mb-0 dark:!text-primary"
               >
                 {title}
               </Typography.H2>

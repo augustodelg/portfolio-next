@@ -1,6 +1,8 @@
-import Typography from "@/components/Typography";
-
+import { Spinner } from "@nextui-org/spinner";
 export default function Loading() {
-    // You can add any UI inside Loading, including a Skeleton.
-    return <Typography.H1 className="text-8xl">CARGANDO</Typography.H1>
-  }
+  return (
+    <div className="w-auto h-screen content-center ">
+      <Spinner size="lg" className="mx-auto my-auto" />
+    </div>
+  );
+}

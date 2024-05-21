@@ -55,14 +55,16 @@ const MainTitle: React.FC = () => {
             <Typography.H3
               key={"FULL STACK"}
               variant={FontVariant.BOLD}
-              className="text-5xl text-blue-500 animate-appearance-in transition-all	duration-2000"
+              // style={{ filter: `drop-shadow(0 2mm 10mm rgb(59, 130, 246, 0.4))` }}
+              className="#3b82f6 text-5xl dark:!text-blue-500 text-blue-500  animate-appearance-in transition-all	duration-2000"
             >
               FULL STACK
             </Typography.H3>,
             <Typography.H3
               key={"CLOUD"}
               variant={FontVariant.BOLD}
-              className="text-5xl text-red-400 animate-appearance-in transition-all	duration-2000"
+              // style={{ filter: `drop-shadow(0 2mm 10mm rgb(248, 113, 113, 0.4))` }}
+              className="dark:drop-shadow-2xl text-5xl dark:!text-red-400 text-red-400 animate-appearance-in transition-all	duration-2000"
             >
               CLOUD NATIVE
             </Typography.H3>,

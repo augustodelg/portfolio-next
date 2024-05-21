@@ -7,7 +7,7 @@ export const TitleSnappler = () => {
     <div className="flex flex-row justify-start align-middle items-center gap-4">
       <Typography.H2
         variant={FontVariant.BOLD}
-        className="text-xl lg:text-2xl text-primary mb-1 sm:mb-0"
+        className="text-xl lg:text-2xl text-primary dark:!text-primary mb-1 sm:mb-0 "
       >
         FullStack - Cloud Native Developer
       </Typography.H2>

@@ -1,11 +1,19 @@
+"use client"
+
 import React from "react";
 import { Card, CardHeader, CardBody } from "@nextui-org/card";
 
 import Typography from "@/components/Typography";
 import { FontVariant } from "@/components/Typography/types";
 import Image from "next/image";
+import { isDarkMode } from "@/utils";
+import { useTheme } from "next-themes";
 
 const AboutmeSection: React.FC = () => {
+  const { theme } = useTheme();
+
+  const isDark = isDarkMode(theme);
+  const iconStyle = isDark ? "invert(1)" : "none";
   return (
     <section
       id="about-me"
@@ -14,7 +22,7 @@ const AboutmeSection: React.FC = () => {
       <Card
         shadow="lg"
         radius="lg"
-        className="mt-16 py-16 px-10 sm:px-16 relative overflow-visible border-transparent md:w-full "
+        className="mt-16 py-16 px-10 sm:px-16 relative overflow-visible border-transparent md:w-full"
       >
         <Image
           className="hidden md:block absolute -top-44 -right-24 z-100"
@@ -50,6 +58,7 @@ const AboutmeSection: React.FC = () => {
         width={350}
         height={350}
         quality={100}
+        style={{  filter: iconStyle , opacity: 0.5}}
         alt={"decorative points"}
       />
       <div className="flex align-middle justify-center md:justify-end md:w-full w-full">

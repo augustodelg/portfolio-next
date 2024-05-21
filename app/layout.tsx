@@ -43,7 +43,7 @@ export default function RootLayout({
           fontSans.className
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div id="home" className=" h-full w-full  ">
             <Navbar />
             <main className="relative flex flex-col  mx-auto ">
