@@ -16,9 +16,8 @@ import { useGetPreconfigTheme } from "./hooks/useGetPreconfigTheme";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { setTheme } = useTheme();
-  const preconfiguredTheme = useGetPreconfigTheme();
-  const isDark = isDarkMode(preconfiguredTheme);
+  const { setTheme, theme } = useTheme();
+  const isDark = isDarkMode(theme);
 
   const darkModeHandler = () => {
     setTheme(isDark ? "light" : "dark");
