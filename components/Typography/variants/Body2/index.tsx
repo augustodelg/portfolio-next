@@ -13,7 +13,7 @@ const Body2 = ({
 
   return (
     <p
-      className={` ${className} ${fontClassName}`}
+      className={` ${className} ${fontClassName} dark:text-slate-200`}
       style={{ letterSpacing: "0.09px" }}
       {...rest}
     >

@@ -9,4 +9,5 @@ export enum FontVariant {
 export type FontProps = PropsWithChildren<{
   variant?: FontVariant;
   className?: string;
+  style?: CSSProperties;
 }>;
