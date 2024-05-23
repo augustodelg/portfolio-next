@@ -17,7 +17,7 @@ const AboutmeSection: React.FC = () => {
   return (
     <section
       id="about-me"
-      className="relative flex flex-col gap-4 px-3 justify-center items-center h-screen w-full md:w-10/12 lg:w-9/12 xl:w-8/12 2xl:w-6/12 animate-appearance-in"
+      className="relative flex flex-col gap-4 px-3 justify-center items-center h-screen w-full md:w-10/12 lg:w-9/12 xl:w-8/12 2xl:6/12 max-w-[1050px] animate-appearance-in"
     >
       <Card
         shadow="lg"
@@ -53,7 +53,7 @@ const AboutmeSection: React.FC = () => {
         </CardBody>
       </Card>
       <Image
-        className=" absolute lg:-right-16 bottom-14 md:bottom-10 xl:bottom-40 -z-10"
+        className=" absolute lg:-right-16  md:bottom-10 xl:bottom-40 -z-10 hidden lg:block"
         src={"/images/points.svg"}
         width={350}
         height={350}
@@ -64,7 +64,7 @@ const AboutmeSection: React.FC = () => {
       <div className="flex align-middle justify-center md:justify-end md:w-full w-full">
         <Card shadow="sm" radius="lg" className="w-full md:w-auto">
           <CardBody className="flex flex-col px-0 lg:flex-row md:w-auto md:px-4 w-full ">
-            <Typography.Body className="text-center text-sm md:text-md text-gray-900">
+            <Typography.Body className="text-center self-center text-sm md:text-md text-gray-900">
               Knowing and understanding how things works is the
             </Typography.Body>
             <Typography.Body

@@ -1,14 +1,13 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/card";
-import Image from "next/image";
-import React, { PropsWithChildren, ReactNode } from "react";
+import React, { PropsWithChildren } from "react";
 import Typography from "../Typography";
 import { FontVariant } from "../Typography/types";
 import { TimelineItemProps } from "./types";
 
 const Timeline = ({ children }: PropsWithChildren) => {
   return (
-    <div className="flex justify-end w-full h-auto animate-appearance-in">
-      <div>{children}</div>
+    <div className="relative flex w-auto h-auto animate-appearance-in">
+      <div className="w-full">{children}</div>
     </div>
   );
 };
@@ -22,7 +21,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   subtitle,
 }) => {
   return (
-    <div className="relative  lg:pl-10 py-6 group w-full ">
+    <div className="relative lg:pl-10 py-6 group">
       <div
         className="
         flex 
@@ -66,7 +65,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           classNames={{
             base: ["px-4", "py-2", "overflow-visible"],
             header: ["pb-0"],
-            body: ["pt-0","lg:w-[820px]"],
+            body: ["pt-0"],
           }}
         >
           {point && (
