@@ -55,8 +55,8 @@ const MainTitle: React.FC = () => {
             <Typography.H3
               key={"FULL STACK"}
               variant={FontVariant.BOLD}
-              // style={{ filter: `drop-shadow(0 2mm 10mm rgb(59, 130, 246, 0.4))` }}
-              className="#3b82f6 text-5xl dark:!text-blue-500 text-blue-500  animate-appearance-in transition-all	duration-2000"
+              // style={{ filter: `drop-shadow(2 2mm 2mm rgb(59, 130, 246, 0.4))` }}
+              className="text-5xl dark:!text-blue-500 text-blue-500  animate-appearance-in transition-all	duration-2000"
             >
               FULL STACK
             </Typography.H3>,
