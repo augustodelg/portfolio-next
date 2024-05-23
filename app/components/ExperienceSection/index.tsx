@@ -8,7 +8,10 @@ import { experienceData } from "./const";
 
 const ExperienceSection: React.FC = () => {
   return (
-    <div id="experiense" className="flex justify-center  items-center w-full h-screen md:w-10/12 lg:w-9/12 xl:w-8/12 2xl:w-6/12 animate-appearance-in ">
+    <div
+      id="experiense"
+      className="flex justify-center  items-center w-full h-screen md:w-10/12 lg:w-9/12 xl:w-8/12 2xl:7/12 max-w-[1050px] animate-appearance-in "
+    >
       <div className="flex flex-col w-full justify-center gap-6 px-3 lg:px-0">
         <Typography.H2
           variant={FontVariant.BOLD}
@@ -16,24 +19,26 @@ const ExperienceSection: React.FC = () => {
         >
           Work experience
         </Typography.H2>
-        <Timeline>
-          {experienceData.map((item, index) => (
-            <Timeline.Item
-              key={index}
-              point={item.point}
-              date={item.date}
-              title={item.title}
-              subtitle={item.subtitle}
-              current={item.current}
-            >
-              <Button radius="full" variant="solid" color="primary">
-                <Typography.Body variant={FontVariant.BOLD}>
-                  {item.buttonText}
-                </Typography.Body>
-              </Button>
-            </Timeline.Item>
-          ))}
-        </Timeline>
+        <div className="lg:ml-8">
+          <Timeline>
+            {experienceData.map((item, index) => (
+              <Timeline.Item
+                key={index}
+                point={item.point}
+                date={item.date}
+                title={item.title}
+                subtitle={item.subtitle}
+                current={item.current}
+              >
+                <Button radius="full" variant="solid" color="primary">
+                  <Typography.Body variant={FontVariant.BOLD}>
+                    {item.buttonText}
+                  </Typography.Body>
+                </Button>
+              </Timeline.Item>
+            ))}
+          </Timeline>
+        </div>
       </div>
     </div>
   );
