@@ -1,12 +1,12 @@
 'use client'
 import React from "react";
 import TechnologyCard from "./components/TechnologyCard";
-import { technologies } from "./const";
+import { TECHNOLOGIES } from "./const";
 
 const TechnologyDecoration: React.FC = () => {
   return (
     <div className="-z-40 transition-all" >
-      {technologies.map((technology) => (
+      {TECHNOLOGIES.map((technology) => (
         <TechnologyCard
           key={technology.name}
           alt={technology.alt}

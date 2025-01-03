@@ -13,15 +13,10 @@ import { NavbarItems } from "./components/NavbarItems";
 import { useTheme } from "@/hooks/useTheme";
 import { isDarkMode } from "@/utils";
 import { useGetPreconfigTheme } from "./hooks/useGetPreconfigTheme";
+import ThemeSiwtch from "./components/ThemeSwitch";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { setTheme, theme } = useTheme();
-  const isDark = isDarkMode(theme);
-
-  const darkModeHandler = () => {
-    setTheme(isDark ? "light" : "dark");
-  };
 
   const toggle = () => {
     setIsMenuOpen(false);
@@ -31,11 +26,10 @@ export const Navbar = () => {
     <NextUINavbar
       onMenuOpenChange={setIsMenuOpen}
       isMenuOpen={isMenuOpen}
-      shouldHideOnScroll
       className="z-10"
     >
       <NavbarContent className="hidden sm:block"></NavbarContent>
-      <NavbarContent className="sm:hidden">
+      <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidde text-indigo-950 dark:text-slate-200"
@@ -55,9 +49,7 @@ export const Navbar = () => {
       </NavbarMenu>
       <NavbarContent className="pl-10" justify="end">
         <NavbarItem>
-          <Suspense fallback={null}>
-            <Switch isSelected={isDark} onChange={() => darkModeHandler()} />
-          </Suspense>
+          <ThemeSiwtch />
         </NavbarItem>
       </NavbarContent>
     </NextUINavbar>

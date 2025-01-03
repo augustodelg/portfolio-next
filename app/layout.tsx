@@ -7,6 +7,8 @@ import clsx from "clsx";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Providers } from "./providers";
+import packageJson from "../package.json";
+
 
 export const metadata: Metadata = {
   title: {
@@ -44,23 +46,26 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div id="home" className=" h-full w-full  ">
+          <div id="home" className="h-full w-full">
             <Navbar />
-            <main className="relative flex flex-col  mx-auto ">
-              {children}
-            </main>
+            <main className="relative flex flex-col mx-auto ">{children}</main>
           </div>
         </Providers>
-      <footer>
-        <div className="mb-10 mx-auto flex flex-col align-middle justify-center text-center">
-          <Typography.Body className="text-small text-gray-500">
-            Designed and developed by Taca 👨‍💻
-          </Typography.Body>
-          <Link href={"https://github.com/augustodelg/portfolio-next"} target="_blank" className="text-gray-500">
-            Version 0.0.2
-          </Link>
-        </div>
-      </footer>
+        <footer>
+          <div className="mb-10 mx-auto flex flex-col align-middle justify-center text-center">
+            <Typography.Body className="text-small text-gray-500">
+              Designed and developed by Taca 👨‍💻
+            </Typography.Body>
+
+            <Link
+              href={"https://github.com/augustodelg/portfolio-next"}
+              target="_blank"
+              className="text-gray-500"
+            >
+              Version {packageJson.version}
+            </Link>
+          </div>
+        </footer>
       </body>
     </html>
   );
