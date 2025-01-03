@@ -80,20 +80,20 @@ const ExperienceSection: React.FC = () => {
         </Typography.Body>
       </div>
       <div className="grid grid-rows-5 gap-4">
-        <div className="col-span-12 lg:row-start-1 lg:row-end-1 lg:col-start-5 lg:col-end-13 bg-slate-800 p-8 rounded-full flex justify-between align-middle drop-shadow-2xl">
+        <div className="col-span-12 lg:row-start-1 lg:row-end-1 lg:col-start-5 lg:col-end-13 bg-slate-800 hover:bg-slate-700 transition-all duration-300 p-8 rounded-full flex justify-between align-middle drop-shadow-2xl">
           <div>
             <Typography.H2 variant={FontVariant.BOLD} className="text-xl">
               {experienceData[0].subtitle}
             </Typography.H2>
             <Typography.Body>
-              Technical Lead - FullStack - Cloud Native Developer
+              Technical Lead - FullStack - Cloud Developer
             </Typography.Body>
           </div>
           <Typography.Body variant={FontVariant.BOLD} className=" lg:text-sm self-center">
             {experienceData[0].date}
           </Typography.Body>
         </div>
-        <div className="col-span-12 lg:row-start-2 lg:row-end-2 lg:col-start-5 lg:col-end-10 bg-slate-800 p-8 rounded-full flex justify-between align-middle drop-shadow-2xl">
+        <div className="col-span-12 lg:row-start-2 lg:row-end-2 lg:col-start-5 lg:col-end-10 bg-slate-800 hover:bg-slate-700 transition-all duration-300 p-8 rounded-full flex justify-between align-middle drop-shadow-2xl">
           <div>
             <Typography.H2 variant={FontVariant.BOLD} className="text-xl ">
               {experienceData[1].subtitle}
@@ -104,9 +104,9 @@ const ExperienceSection: React.FC = () => {
             {experienceData[1].date}
           </Typography.Body>
         </div>
-        <div className="col-span-12 lg:row-start-3 lg:row-end-4 lg:col-start-2 lg:col-end-6 bg-slate-800 p-8 rounded-full flex justify-between align-middle drop-shadow-2xl">
+        <div className="col-span-12 lg:row-start-3 lg:row-end-4 lg:col-start-2 lg:col-end-6 bg-slate-800 hover:bg-slate-700 transition-all duration-300 p-8 rounded-full flex justify-between align-middle drop-shadow-2xl">
           <div>
-            <Typography.H2 variant={FontVariant.BOLD} className="text-xl ">
+            <Typography.H2 variant={FontVariant.BOLD} className="text-xl">
               {experienceData[2].subtitle}
             </Typography.H2>
             <Typography.Body>{experienceData[2].title}</Typography.Body>
@@ -115,7 +115,7 @@ const ExperienceSection: React.FC = () => {
             {experienceData[2].date}
           </Typography.Body>
         </div>
-        <div className="row-start-4 row-end-5 col-start-1 col-end-13 bg-slate-800 p-8 rounded-full flex justify-between align-middle drop-shadow-2xl">
+        <div className="row-start-4 row-end-5 col-start-1 col-end-13 bg-slate-800 hover:bg-slate-700 transition-all duration-300 p-8 rounded-full flex justify-between align-middle drop-shadow-2xl">
           <div>
             <Typography.H2 variant={FontVariant.BOLD} className="text-xl">
               {experienceData[3].subtitle}
