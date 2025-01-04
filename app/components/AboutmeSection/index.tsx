@@ -12,7 +12,7 @@ const AboutmeSection: React.FC = () => {
   return (
     <section
       id="about-me"
-      className="px-10 lg:px-0 relative flex flex-col justify-center items-center  min-h-[900px] w-full animate-appearance-in"
+      className="px-4 lg:px-0 relative flex flex-col justify-center items-center  min-h-[900px] w-full animate-appearance-in"
     >
       <div className="flex flex-col">
         <div className="relative overflow-hidden border-transparent w-full grid grid-cols-6 gap-4 ">

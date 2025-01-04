@@ -30,15 +30,15 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="w-full py-16">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="pb-10 lg:pb-20 flex flex-col gap-4 mt-10">
+        <div className="pb-10 lg:pb-20 flex flex-col gap-4 mt-10 items-end ">
           <Typography.H2
           variant={FontVariant.BOLD}
-            className="text-indigo-950 text-5xl lg:text-6xl text-right"
+            className="text-indigo-950 text-5xl lg:text-6xl"
           >
-            Some of my <strong>projects</strong> 
+            Some of my projects
           </Typography.H2>
           <Typography.Body
-            className="text-gray-800 dark:text-gray-300 text-base lg:text-xl text-right"
+            className="text-gray-800 dark:text-gray-300 text-base lg:text-xl text-right lg:w-11/12"
             variant={FontVariant.REGULAR}
           >
             It&apos;s a collection of <strong>ideas</strong> and <strong>challenges</strong> I enjoy exploring. Many of which also come from clients, and only the public-friendly ones make it here!

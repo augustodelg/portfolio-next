@@ -23,13 +23,13 @@ const ExperienceSection: React.FC = () => {
   return (
     <section
       id="experience"
-      className="relative pt-10  px-10 items-center w-full xl:max-w-7xl animate-appearance-in px-15 overflow-visible "
+      className="relative pt-10 px-4 items-center w-full xl:max-w-7xl animate-appearance-in  overflow-visible "
     >
       <AnimatedBackground />
       <div className="pb-10 lg:pb-20 flex flex-col gap-4 mt-10">
         <Typography.H2
           variant={FontVariant.BOLD}
-          className="text-indigo-950 text-5xl lg:text-6xl text-left"
+          className="text-indigo-950 text-5xl lg:text-6xl text-left "
         >
           My experience
         </Typography.H2>
@@ -96,7 +96,7 @@ const ExperienceSection: React.FC = () => {
           </div>
           <Typography.Body
             variant={FontVariant.BOLD}
-            className="text-xs self-center text-right w-32"
+            className="text-xs self-center text-right w-48"
           >
             {experienceData[3].date}
           </Typography.Body>
