@@ -1,80 +1,79 @@
-"use client"
+"use client";
 
+import { Card, CardBody } from "@nextui-org/card";
 import React from "react";
-import { Card, CardHeader, CardBody } from "@nextui-org/card";
+import Image from "next/image";
 
 import Typography from "@/components/Typography";
 import { FontVariant } from "@/components/Typography/types";
-import Image from "next/image";
-import { isDarkMode } from "@/utils";
-import { useTheme } from "@/hooks/useTheme";
+
 
 const AboutmeSection: React.FC = () => {
-  const { theme } = useTheme();
-
-  const isDark = isDarkMode(theme);
-  const iconStyle = isDark ? "invert(1)" : "none";
   return (
     <section
       id="about-me"
-      className="relative flex flex-col gap-4 px-3 justify-center items-center h-screen w-full md:w-10/12 lg:w-9/12 xl:w-8/12 2xl:6/12 max-w-[1050px] animate-appearance-in"
+      className="px-4 lg:px-0 relative flex flex-col justify-center items-center  min-h-[900px] w-full animate-appearance-in"
     >
-      <Card
-        shadow="lg"
-        radius="lg"
-        className="mt-16 py-16 px-10 sm:px-16 relative overflow-visible border-transparent md:w-full"
-      >
-        <Image
-          className="hidden md:block absolute -top-44 -right-24 z-100"
-          src={"/images/avatar-3d.png"}
-          width={550}
-          height={450}
-          quality={100}
-          alt={"Foto 3d de augusto"}
-        />
+      <div className="flex flex-col">
+        <div className="relative overflow-hidden border-transparent w-full grid grid-cols-6 gap-4 ">
+          <div
+          style={{overflowClipMargin: "content-box"}}
+           className="relative md:col-span-2 xl:col-span-3 bg-content1 rounded-r-3xl flex justify-end overflow-clip">
+            
+            {/* I designed this with a lot of love, but in the end I deprecated it. If you see this is a reminder that I spent about 3 hours making it. */}
+            
+            {/* <Image
+              src={"/images/avatar-3d.png"}
+              width={750}
+              height={1050}
+              quality={100}
+              resource="image"
+              className="hidden xl:block z-100  scale-x-[-1.1] scale-y-[1.1]  transition-all absolute -bottom-72  left-0"
+              alt={"Foto 3d de augusto"}
+            /> */}
 
-        <CardHeader>
-          <Typography.H1
-            variant={FontVariant.BOLD}
-            className="text-5xl lg:text-6xl text-purple-950"
-          >
-            ABOUT ME.
-          </Typography.H1>
-        </CardHeader>
-        <CardBody>
-          <Typography.Body className="text-base lg:text-lg text-gray-700 md:pr-80">
-            Graduated as a University Programmer Analyst and 5th year student of
-            Computer Science at Universidad Nacional de La Plata (UNLP,
-            Argentina). Lover of software architecture, DevOps and, clear,
-            reusable and efficient, code. If I have to define myself in short, I
-            would say that I consider myself a curious person who likes to test,
-            create and understand how things work.
-          </Typography.Body>
-        </CardBody>
-      </Card>
-      <Image
-        className=" absolute lg:-right-16  md:bottom-10 xl:bottom-40 -z-10 hidden lg:block"
-        src={"/images/points.svg"}
-        width={350}
-        height={350}
-        quality={100}
-        style={{  filter: iconStyle , opacity: 0.5}}
-        alt={"decorative points"}
-      />
-      <div className="flex align-middle justify-center md:justify-end md:w-full w-full">
-        <Card shadow="sm" radius="lg" className="w-full md:w-auto">
-          <CardBody className="flex flex-col px-0 lg:flex-row md:w-auto md:px-4 w-full ">
-            <Typography.Body className="text-center self-center text-sm md:text-md text-gray-900">
-              Knowing and understanding how things works is the
-            </Typography.Body>
-            <Typography.Body
+          </div>
+          <div className="col-span-6 md:col-span-3 xl:col-span-2 flex flex-col  gap-4 my-auto h-full justify-between">
+            <Typography.H1
               variant={FontVariant.BOLD}
-              className="text-center md:text-md text-gray-900 pl-1"
+              className="text-5xl xl:text-6xl text-indigo-950"
             >
-              key. 👌
+              I&apos;m a Software Engineer working remotely from Argentina 🇦🇷
+            </Typography.H1>
+            <Typography.Body className="text-base lg:text-xl xl:text-xl text-gray-800">
+              Lover of <strong>software architecture</strong>,{" "}
+              <strong>DevOps</strong>, <strong>AI</strong> and, clear, reusable
+              and efficient, code. If I have to define myself in short, I would
+              say that I consider myself a{" "}
+              <strong>
+                curious person who likes to test, create and understand how
+                things work
+              </strong>
+              . Graduated as a{" "}
+              <strong>Analista Programador Universitario</strong> and{" "}
+              <strong>5th year student of Computer Science</strong> at{" "}
+              <strong>
+                Universidad Nacional de La Plata (UNLP, Argentina)
+              </strong>
+              .
+              <br />
             </Typography.Body>
-          </CardBody>
-        </Card>
+            <Card shadow="sm" radius="lg" className="lg:w-fit">
+              <CardBody className="flex flex-row px-0 lg:flex-row lg:px-4 justify-center">
+                <Typography.Body className="text-center self-center text-sm lg:text-lg text-gray-900">
+                  I love what I do, that&apos;s the
+                </Typography.Body>
+                <Typography.Body
+                  variant={FontVariant.BOLD}
+                  className="text-center lg:text-lg text-gray-900 pl-1"
+                >
+                  trick. 👌
+                </Typography.Body>
+              </CardBody>
+            </Card>
+          </div>
+          <div className="bg-content1 col-span-1 rounded-l-3xl" />
+        </div>
       </div>
     </section>
   );

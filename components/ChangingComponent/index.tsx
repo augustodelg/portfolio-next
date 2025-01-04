@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ChangingComponentProps } from './types';
 
 const ChangingComponent = ({ components, intervalTime }: ChangingComponentProps ) => {

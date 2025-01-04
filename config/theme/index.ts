@@ -8,12 +8,6 @@ const theme: ConfigThemes = {
         medium: "0 0 1rem rgba(175, 120, 120,  0.2)",
         large: "0 0 2rem rgba(175, 120, 120,  0.2)",
       },
-      fontSize: {
-        small: "0.75rem",
-        medium: "0.875rem",
-        large: "1rem",
-        tiny: "0.5rem",
-      },
       lineHeight: {
         small: "1rem",
         medium: "1.25rem",
@@ -49,7 +43,7 @@ const theme: ConfigThemes = {
         DEFAULT: "#FFFF",
       },
       divider: "#fff",
-      content1: "#fff",
+      content1: "#fff7ed",
     },
   },
   dark: {
@@ -58,12 +52,6 @@ const theme: ConfigThemes = {
         small: "0 0 0.5rem rgba(60, 0, 210, 0.12)",
         medium: "0 0 1rem rgba(60, 0, 210, 0.12)",
         large: "0 0 2rem rgba(60, 0, 210, 0.12)",
-      },
-      fontSize: {
-        small: "0.75rem",
-        medium: "0.875rem",
-        large: "1rem",
-        tiny: "0.5rem",
       },
       lineHeight: {
         small: "1rem",
@@ -82,14 +70,14 @@ const theme: ConfigThemes = {
 
     colors: {
       background: {
-        DEFAULT: "#060910",
+        DEFAULT: "#0f172a",
       },
       primary: "#818CF8", // Lighter shade of blue for better visibility in dark mode
       secondary: "#F472B6", // Lighter shade of pink
       divider: "#1F2937",
       // content1: "#111D2D",
       // content1: "#111827",
-      content1: "#0B1625",
+      content1: "#1e293b",
     },
   },
 };

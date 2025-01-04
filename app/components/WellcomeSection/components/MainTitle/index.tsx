@@ -6,7 +6,7 @@ import Socialmedia from "./components/Socialmedia";
 
 const MainTitle: React.FC = () => {
   return (
-    <div className="w-auto text-center lg:text-left">
+    <div className="w-min-full text-center lg:text-left">
       <Typography.Body2
         variant={FontVariant.REGULAR}
         className="text-md text-left hidden lg:block pl-[6px] lg:leading-tight text-gray-500 "
@@ -16,16 +16,16 @@ const MainTitle: React.FC = () => {
       <div className="flex flex-col lg:flex-row gap-2 lg:gap-0">
         <Typography.H1
           variant={FontVariant.BOLD}
-          className="text-[130px] leading-[0.8] lg:leading-none   text-purple-950"
+          className="text-[130px] leading-[0.8] lg:leading-none text-purple-950"
         >
-          HOLA
+          Hello
         </Typography.H1>
-        <div className="bg-purple-950  lg:ml-2 rounded-lg  lg:-rotate-90 lg:self-center ">
+        <div className="bg-purple-950  lg:ml-2 rounded-lg lg:-rotate-90 lg:self-center ">
           <Typography.H1
             variant={FontVariant.BOLD}
             className="text-4xl p-4 text-white text-center"
           >
-            SOY
+            I am
           </Typography.H1>
         </div>
         <div className="my-auto ">
@@ -39,7 +39,7 @@ const MainTitle: React.FC = () => {
             variant={FontVariant.BOLD}
             className="text-6xl xl:text-5xl text-purple-950"
           >
-            Del Grosso.
+            Del Grosso
           </Typography.H3>
         <Typography.Body2
           variant={FontVariant.REGULAR}
@@ -49,7 +49,7 @@ const MainTitle: React.FC = () => {
         </Typography.Body2>
       </div>
         </div>
-      <div className="flex  lg:pl-[4.8px] flex-col lg:flex-row">
+      <div className="flex w-full lg:pl-[4.8px] flex-col lg:flex-row">
         <ChangingComponent
           components={[
             <Typography.H3
@@ -66,7 +66,7 @@ const MainTitle: React.FC = () => {
               // style={{ filter: `drop-shadow(0 2mm 10mm rgb(248, 113, 113, 0.4))` }}
               className="dark:drop-shadow-2xl text-5xl dark:!text-red-400 text-red-400 animate-appearance-in transition-all	duration-2000"
             >
-              CLOUD NATIVE
+              AI
             </Typography.H3>,
           ]}
           intervalTime={3000}
@@ -75,7 +75,7 @@ const MainTitle: React.FC = () => {
           variant={FontVariant.BOLD}
           className="text-5xl lg:pl-2 text-purple-950"
         >
-          DEVELOPER.
+          DEVELOPER
         </Typography.H3>
       </div>
       <Socialmedia />
