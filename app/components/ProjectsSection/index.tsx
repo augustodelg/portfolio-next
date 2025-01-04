@@ -33,7 +33,7 @@ const ProjectsSection = () => {
         <div className="pb-10 lg:pb-20 flex flex-col gap-4 mt-10 items-end ">
           <Typography.H2
           variant={FontVariant.BOLD}
-            className="text-indigo-950 text-5xl lg:text-6xl"
+            className="text-indigo-950 text-5xl lg:text-6xl text-right"
           >
             Some of my projects
           </Typography.H2>

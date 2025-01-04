@@ -125,10 +125,10 @@ export const Navbar = () => {
               }`}
             >
               <li
-                className={`relative z-10 px-4 lg:px-6 py-2 cursor-pointer font-medium  tab-${tab.name} `}
+                className={`relative z-10 px-4 lg:px-6 py-2 cursor-pointer tab-${tab.name} `}
                 onClick={() => setActiveTab(tab.name)}
               >
-                <Typography.Body variant={FontVariant.MEDIUM} className="text-sm lg:text-base text-center" >
+                <Typography.Body variant={FontVariant.MEDIUM} className="text-xs sm:text-sm text-center" >
                   {tab.name}
                 </Typography.Body>
               </li>

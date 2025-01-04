@@ -128,7 +128,7 @@ export const TECHNOLOGIES: TechnologyItem[] = [
     height: 40,
     alt: "Node icon",
     configuration:
-      `top-[52%]
+      `top-[62%]
       left-[10%]
       scale-[0.5]
       -rotate-12

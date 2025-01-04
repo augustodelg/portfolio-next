@@ -8,8 +8,8 @@ const AnimatedBackground = () => {
   return (
     <>
       <div className="absolute top-0 right-28 w-72 h-72 bg-orange-200 dark:bg-indigo-400 rounded-full  filter opacity-30 dark:opacity-10 blur-3xl animate-blob"></div>
-      <div className="absolute top-0 right-0 w-32 h-32  bg-pink-600 dark:bg-indigo-500 rounded-full  filter opacity-30 dark:opacity-20 blur-3xl animate-blob animation-delay-2000"></div>
-      <div className="absolute top-0 left-0 w-72 h-72 lg:w-96 lg:h-96 bg-indigo-400 dark:bg-indigo-600  rounded-full  filter  opacity-30 dark:opacity-10 blur-3xl animate-blob animation-delay-4000"></div>
+      <div className="hidden lg:absolute top-0 right-0 w-32 h-32  bg-pink-600 dark:bg-indigo-500 rounded-full  filter opacity-30 dark:opacity-20 blur-3xl animate-blob animation-delay-2000"></div>
+      <div className="hidden lg:absolute  top-0 left-0 w-72 h-72 lg:w-96 lg:h-96 bg-indigo-400 dark:bg-indigo-600  rounded-full  filter  opacity-30 dark:opacity-10 blur-3xl animate-blob animation-delay-4000"></div>
       <div className="hidden lg:absolute top-0 left-40 w-72 h-72 bg-orange-500 dark:bg-indigo-900 rounded-full  filter opacity-30 dark:opacity-20 blur-3xl animate-blob animation-delay-6000"></div>
       <div className="hidden lg:absolute top-0 -left-40 w-72 h-72 dark:bg-indigo-700 rounded-full  filter opacity-10 blur-3xl animate-blob"></div>
       <div className="hidden lg:absolute top-0 left-64 w-44 h-44  dark:bg-purple-500 rounded-full  filter opacity-10 blur-3xl animate-blob animation-delay-2000"></div>

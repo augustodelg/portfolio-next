@@ -13,8 +13,8 @@ const AnimatedBackground = () => {
       <div className="absolute -bottom-8 right-20 w-72 h-72 bg-indigo-400 dark:bg-indigo-100  rounded-full mix-blend-multiply filter  opacity-30 dark:opacity-10 blur-3xl animate-blob animation-delay-4000"></div>
       <div className="absolute -bottom-8 right-40 w-72 h-72 bg-orange-500 dark:bg-indigo-400 rounded-full mix-blend-multiply filter opacity-30 dark:opacity-10 blur-3xl animate-blob animation-delay-6000"></div>
       <div className="absolute -bottom-8 left-10 w-72 h-72 bg-indigo-300/70 dark:bg-indigo-300 rounded-full mix-blend-multiply filter opacity-10 blur-3xl animate-blob"></div>
-      <div className="absolute -bottom-8 left-12 w-72 h-72 dark:bg-indigo-500 rounded-full mix-blend-multiply filter opacity-10 blur-3xl animate-blob animation-delay-2000"></div>
-      <div className="absolute -bottom-8 left-20 w-72 h-72 bg-orange-500 dark:bg-indigo-100  rounded-full mix-blend-multiply filter opacity-10 blur-3xl animate-blob animation-delay-4000"></div>
+      <div className="absolute -bottom-8 left-12 w-40 h-40 lg:w-72 lg:h-72 dark:bg-indigo-500 rounded-full mix-blend-multiply filter opacity-10 blur-3xl animate-blob animation-delay-2000"></div>
+      <div className="absolute -bottom-8 left-20 w-40 h-40 lg:w-72 lg:h-72 bg-orange-500 dark:bg-indigo-100  rounded-full mix-blend-multiply filter opacity-10 blur-3xl animate-blob animation-delay-4000"></div>
     </>
   );
 };

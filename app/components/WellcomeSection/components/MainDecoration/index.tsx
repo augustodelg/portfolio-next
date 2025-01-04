@@ -24,14 +24,14 @@ const MainDecoration: React.FC = () => {
         alt={"Astronaut and clouds"}
       />
       <Image
-        className="w-64 h-50 left-12 top-[130%] scale-150 md:left-10 lg:w-[60%] lg:left-52 lg:top-[90%] xl:w-auto xl:h-auto object-contain block absolute xl:scale-110 xl:left-24 xl:top-28 xl:size-10 motion-safe:animate-none -z-10  dark:drop-shadow-3xl"
+        className="w-64 h-50 left-12 top-[130%] scale-125 md:left-10 lg:w-[60%] lg:left-52 lg:top-[90%] xl:w-auto xl:h-auto object-contain block absolute xl:scale-110 xl:left-24 xl:top-28 xl:size-10 motion-safe:animate-none -z-10  dark:drop-shadow-3xl"
         style={{
           filter: `drop-shadow(0 0mm 20mm ${colorGlow})`,
         }}
         priority
         src={"/images/space-background.svg"}
         width={1200}
-        height={450}
+        height={650}
         quality={100}
         alt={"Space"}
       />
