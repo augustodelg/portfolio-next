@@ -5,28 +5,28 @@ export const siteConfig = {
   description: "Full Stack Cloud Native Developer",
   navMenuItems: [
     {
-      label: "INICIO",
+      label: "HOME",
       href: "#home",
     },
     {
-      label: "SOBRE MI",
+      label: "ABOUT ME",
       href: "#about-me",
     },
     {
-      label: "EXPERIENCIAS",
-      href: "#experiense",
+      label: "EXPERIENCE",
+      href: "#experience",
     },
     {
-      label: "ESTUDIOS",
-      href: "#",
+      label: "STUDIES",
+      href: "#studies",
     },
     {
-      label: "PROYECTOS",
-      href: "#",
+      label: "PROJECTS",
+      href: "#projects",
     },
     {
-      label: "CONOCIMIENTOS",
-      href: "#",
+      label: "KNOWLEDGE",
+      href: "#knowledge",
     },
   ],
   links: {
