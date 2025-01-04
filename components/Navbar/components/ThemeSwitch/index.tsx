@@ -18,6 +18,7 @@ const ThemeSwitch = () => {
         isSelected={isDark}
         onChange={() => darkModeHandler()}
         color="default"
+        className="w-full"
         thumbIcon={({ isSelected, className }) =>
           isSelected ? <Icons.Moon className={`${className} text-indigo-900`} /> :<Icons.Sun className={`${className} text-yellow-500`} />
         }

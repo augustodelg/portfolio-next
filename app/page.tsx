@@ -4,6 +4,7 @@ import ExperienceSection from "./components/ExperienceSection";
 import { Suspense } from "react";
 import Loading from "./loading";
 import StudySection from "./components/StudySection";
+import ProjectsSection from "./components/ProjectsSection";
 
 export default function Home() {
   return (
@@ -12,8 +13,7 @@ export default function Home() {
         <WelcomeSection />
         <AboutmeSection />
         <ExperienceSection />
-        
-        {/* <StudySection /> */}
+        <ProjectsSection/>
       </Suspense>
     </div>
   );

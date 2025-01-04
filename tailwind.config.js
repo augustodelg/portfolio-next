@@ -74,9 +74,9 @@ module.exports = {
           "--font-9xl": "clamp(7.2rem, 5.4rem + 2.7vw, 9.9rem)",
 
           // Line heights
-          "--line-xs": "1.25",
-          "--line-sm": "1.25",
-          "--line-base": "1.4",
+          "--line-xs": "1",
+          "--line-sm": "1",
+          "--line-base": "1.2",
           "--line-lg": "1.4",
           "--line-xl": "1.4",
           "--line-2xl": "1.3",

@@ -19,8 +19,8 @@ export const TECHNOLOGIES: TechnologyItem[] = [
     lg:top-[50%]  
     xl:-left-[30%] 
     xl:top-[35%] 
-    2xl:top-[25%] 
-    2xl:-left-[40%] 
+    2xl:top-[35%] 
+    2xl:-left-[35%] 
     lg:-rotate-12 
     `,
   },

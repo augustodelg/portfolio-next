@@ -26,7 +26,7 @@ export const experienceData = [
   },
   {
     date: "January 2021 - August 2022",
-    title: "FullStack (React JS/Ruby on Rails) - Data Engineer",
+    title: "FullStack - Data Engineer",
     subtitle: "Universidad de Almirante Brown",
     buttonText: "Show more"
   },
